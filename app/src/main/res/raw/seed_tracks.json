@@ -1,15 +1,57 @@
 {
   "genres": [
     {
-      "name": "LoFi",
-      "tracks": [
-        { "title": "Pompeii", "artist": "Studio Demo", "raw": "pompeii" }
-      ]
-    },
-    {
       "name": "Rock",
       "tracks": [
         { "title": "Rock Demo", "artist": "Studio Demo", "raw": "personalholloway" }
+      ]
+    },
+    {
+      "name": "Rap",
+      "tracks": [
+        { "title": "Rap Placeholder", "artist": "Studio Demo", "raw": "personalholloway" }
+      ]
+    },
+    {
+      "name": "R&B",
+      "tracks": [
+        { "title": "R&B Placeholder", "artist": "Studio Demo", "raw": "pompeii" }
+      ]
+    },
+    {
+      "name": "Alternative",
+      "tracks": [
+        { "title": "Alternative Placeholder", "artist": "Studio Demo", "raw": "personalholloway" }
+      ]
+    },
+    {
+      "name": "Pop",
+      "tracks": [
+        { "title": "Pop Placeholder", "artist": "Studio Demo", "raw": "pompeii" }
+      ]
+    },
+    {
+      "name": "Jazz",
+      "tracks": [
+        { "title": "Jazz Placeholder", "artist": "Studio Demo", "raw": "personalholloway" }
+      ]
+    },
+    {
+      "name": "Classical",
+      "tracks": [
+        { "title": "Classical Placeholder", "artist": "Studio Demo", "raw": "pompeii" }
+      ]
+    },
+    {
+      "name": "Country",
+      "tracks": [
+        { "title": "Country Placeholder", "artist": "Studio Demo", "raw": "personalholloway" }
+      ]
+    },
+    {
+      "name": "Hip Hop",
+      "tracks": [
+        { "title": "Hip Hop Placeholder", "artist": "Studio Demo", "raw": "pompeii" }
       ]
     }
   ]
