@@ -1,0 +1,16 @@
+{
+  "genres": [
+    {
+      "name": "LoFi",
+      "tracks": [
+        { "title": "Pompeii", "artist": "Studio Demo", "raw": "pompeii" }
+      ]
+    },
+    {
+      "name": "Rock",
+      "tracks": [
+        { "title": "Rock Demo", "artist": "Studio Demo", "raw": "personalhollow" }
+      ]
+    }
+  ]
+}
