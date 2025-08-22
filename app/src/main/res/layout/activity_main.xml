@@ -1,65 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="TrackTwist"
         android:textSize="24sp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
 
     <Spinner
-        android:id="@+id/spGenres"
+        android:id="@+id/genreSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:id="@+id/randomizeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Randomize"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/artistSearchInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by artist"
         android:layout_marginTop="12dp" />
 
     <Button
-        android:id="@+id/btnRandomize"
-        android:text="Randomize"
+        android:id="@+id/searchArtistButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp" />
+        android:text="Search Artist"
+        android:layout_marginTop="8dp" />
 
-    <TextView
-        android:id="@+id/tvNowPlaying"
-        android:text="Now Playing:"
-        android:textSize="16sp"
+    <ProgressBar
+        android:id="@+id/loadingIndicator"
+        style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
 
-    <!-- Row with Play and Save Favorite -->
+    <ImageView
+        android:id="@+id/albumArt"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="Album art"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/nowPlayingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Now Playing:"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/artistText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Artist"
+        android:layout_marginTop="4dp" />
+
+    <!-- Controls row: Play, Save, Share -->
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_marginTop="12dp">
 
         <Button
-            android:id="@+id/btnPlayPause"
-            android:text="Play"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-
-        <Button
-            android:id="@+id/btnFavorite"
-            android:text="Save Favorite"
+            android:id="@+id/playButton"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginStart="8dp"/>
+            android:text="Play" />
+
+        <Button
+            android:id="@+id/saveFavoriteButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save Favorite"
+            android:layout_marginStart="8dp" />
+
+        <Button
+            android:id="@+id/shareButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Share"
+            android:layout_marginStart="8dp" />
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnShowFavorites"
-        android:text="View Favorites"
+        android:id="@+id/viewFavoritesButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"/>
+        android:text="View Favorites"
+        android:layout_marginTop="8dp" />
 </LinearLayout>
