@@ -47,6 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
         android:visibility="gone" />
 
     <ImageView
@@ -55,6 +56,7 @@
         android:layout_height="200dp"
         android:layout_marginTop="12dp"
         android:contentDescription="Album art"
+        android:gravity="center_horizontal"
         android:scaleType="centerCrop" />
 
     <TextView
@@ -62,6 +64,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Now Playing:"
+        android:gravity="center_horizontal"
         android:layout_marginTop="16dp" />
 
     <TextView
@@ -69,6 +72,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Artist"
+        android:gravity="center_horizontal"
         android:layout_marginTop="4dp" />
 
     <!-- Controls row: Play, Save, Share -->
@@ -102,10 +106,54 @@
             android:layout_marginStart="8dp" />
     </LinearLayout>
 
+    <!-- Reaction row: Like and Dislike -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/thumbsUpButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="👍 Like"
+            android:contentDescription="Like current track" />
+
+        <Button
+            android:id="@+id/thumbsDownButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="👎 Dislike"
+            android:layout_marginStart="8dp"
+            android:contentDescription="Dislike and skip to next" />
+    </LinearLayout>
+
     <Button
         android:id="@+id/viewFavoritesButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="View Favorites"
         android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/footerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nathan Ames-Orona"
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/footerClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="COM-437-OL01-SU2"
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:gravity="center_horizontal" />
 </LinearLayout>
